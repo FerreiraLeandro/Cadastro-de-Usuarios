@@ -13,6 +13,7 @@
         <div class="box-home">
             <a href="">Login</a>
             <a href="">Cadastre-se</a>
+            <a href="">TESTE</a>
         </div>
     </div>
 </body>

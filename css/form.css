@@ -27,6 +27,10 @@ input{
     text-align: left;
 }
 
+input.entrada{
+    padding: 10px;
+}
+
 .box{
     background-color: rgba(0, 0, 0, 0.9);
     padding: 10px;
@@ -110,4 +114,5 @@ legend{
     color: white;
     border-radius: 8px;
     margin-bottom: -10px;
+    cursor: pointer;
 }

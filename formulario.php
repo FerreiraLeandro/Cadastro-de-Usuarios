@@ -5,6 +5,7 @@
     
         $nome = $_POST ['nome'];
         $email = $_POST ['email'];
+        $senha = $_POST ['senha'];
         $telefone = $_POST ['telefone'];
         $sexo = $_POST ['sexo'];
         $data_nasc = $_POST ['data_nasc'];
@@ -12,8 +13,10 @@
         $estado = $_POST ['estado'];
         $endereco = $_POST ['endereco'];
     
-        $result = mysqli_query($conexao, "INSERT INTO formulario.usuarios(nome, email, telefone, sexo, data_nasc, cidade, estado, endereco)
-        VALUES ('$nome', '$email', '$telefone','$sexo','$data_nasc', '$cidade', '$estado', '$endereco')");
+        $result = mysqli_query($conexao, "INSERT INTO formulario.usuarios(nome, email, senha, telefone, sexo, data_nasc, cidade, estado, endereco)
+        VALUES ('$nome', '$email','$senha', '$telefone','$sexo','$data_nasc', '$cidade', '$estado', '$endereco')");
+
+        header('Location: tela-de-login.php');
     }
 ?>
 <!DOCTYPE html>
@@ -27,7 +30,7 @@
 </head>
 <body>
     <div>
-        <a href="home.html"><img src="images/seta.png" height="50px" alt="Voltar"></a>
+        <a href="tela_inicial.php"><img src="images/seta.png" height="50px" alt="Voltar"></a>
     </div>
     <div class="box">
         <form action="formulario.php" method="POST">
@@ -40,6 +43,10 @@
                 <div class="inputBox">
                     <input type="email" name="email" id="email" class="inputUser" required>
                     <label for="email" class="labelInput">e-mail</label>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="senha" id="senha" class="inputUser" required>
+                    <label for="senha" class="labelInput">senha</label>
                 </div>
                 <div class="inputBox">
                     <input type="tel" name="telefone" id="telefone" class="inputUser" required>

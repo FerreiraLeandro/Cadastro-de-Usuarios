@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    background:linear-gradient(45deg, rgb(79, 0, 153), rgb(213, 168, 255));
+    flex-direction: column;
+}
+
+h1{
+    position: absolute;
+    margin-top: -150px;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    color: white;
+    padding: 300px;
+}
+
+.tabela{
+    padding: 120px;
+    margin: 20px;
+}
+

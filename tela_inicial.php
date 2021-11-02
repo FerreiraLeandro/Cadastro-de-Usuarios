@@ -12,8 +12,8 @@
         <h1 class="titulo-home">Sistema de Login/Cadastro</h1>
     </div>
     <div class="box">
-        <a href="tela-de-login.html">Login</a>
-        <a href="formulario.html">Cadastre-se</a>
+        <a href="tela-de-login.php">Login</a>
+        <a href="formulario.php">Cadastre-se</a>
     </div>
 </body>
 </html>
